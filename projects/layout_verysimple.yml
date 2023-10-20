@@ -1,0 +1,33 @@
+ROOT:
+  center:
+  - -20.66257624555018
+  - 13.481912712039238
+  subNodes:
+  - Startup:
+      center:
+      - 0.23401595183477486
+      - -15.481912712039234
+      subNodes:
+      - toto:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - aaaaaaaaaa:
+              center:
+              - 0.0
+              - -1.5
+  - MyScenario:
+      center:
+      - -0.17473705281728633
+      - 9.731912712039238
+      subNodes:
+      - Launch:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - ROOT.Startup.toto:
+              center:
+              - 0.0
+              - -1.5

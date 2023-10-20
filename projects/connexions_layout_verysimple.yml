@@ -1,0 +1,33 @@
+- id: ROOT.Startup.toto_ROOT.Startup.toto.aaaaaaaaaa
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: aaaaaaaaaa
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.MyScenario.Launch_ROOT.MyScenario.Launch.ROOT.Startup.toto
+  nbSegments: 1
+  start:
+    node: Launch
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ROOT.Startup.toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.MyScenario.Launch.ROOT.Startup.toto_ROOT.Startup.toto
+  nbSegments: 1
+  start:
+    node: ROOT.Startup.toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE

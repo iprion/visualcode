@@ -1,0 +1,2277 @@
+- id: ROOT.Node1.Startup.Main.start_ROOT.Node1.Startup.Main.start.Startup.Jetty
+  nbSegments: 1
+  start:
+    node: start
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.Jetty
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.Main.start.Startup.Jetty_ROOT.Node1.Startup.Jetty
+  nbSegments: 2
+  start:
+    node: Startup.Jetty
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: Jetty
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.Main.start.Startup.Jetty_ROOT.Node1.Startup.Main.start.Startup.Jetty.doStart
+  nbSegments: 1
+  start:
+    node: Startup.Jetty
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.Jetty.doStart
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.Main.start.Startup.Jetty.doStart_ROOT.Node1.Startup.Jetty.doStart
+  nbSegments: 1
+  start:
+    node: Startup.Jetty.doStart
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: doStart
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.Jetty.doStart_ROOT.Node1.Startup.Jetty.doStart.Startup.SolrDispatchFilter.Init
+  nbSegments: 1
+  start:
+    node: doStart
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrDispatchFilter.Init
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.Jetty.doStart.Startup.SolrDispatchFilter.Init_ROOT.Node1.Startup.SolrDispatchFilter.Init
+  nbSegments: 1
+  start:
+    node: Startup.SolrDispatchFilter.Init
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Init
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.Jetty.doFilter_ROOT.Node1.Startup.Jetty.doFilter.Startup.SolrDispatchFilter.doFilter
+  nbSegments: 1
+  start:
+    node: doFilter
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrDispatchFilter.doFilter
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.Jetty.doFilter.Startup.SolrDispatchFilter.doFilter_ROOT.Node1.Startup.SolrDispatchFilter.doFilter
+  nbSegments: 1
+  start:
+    node: Startup.SolrDispatchFilter.doFilter
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: doFilter
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrDispatchFilter.Init_ROOT.Node1.Startup.SolrDispatchFilter.Init.Startup.CoreContainer
+  nbSegments: 1
+  start:
+    node: Init
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CoreContainer
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrDispatchFilter.Init.Startup.CoreContainer_ROOT.Node1.Startup.CoreContainer
+  nbSegments: 2
+  start:
+    node: Startup.CoreContainer
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: CoreContainer
+    connexionSide: TOP
+    nConnexion: 9
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrDispatchFilter.Init.Startup.CoreContainer_ROOT.Node1.Startup.SolrDispatchFilter.Init.Startup.CoreContainer.load
+  nbSegments: 1
+  start:
+    node: Startup.CoreContainer
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CoreContainer.load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrDispatchFilter.Init.Startup.CoreContainer.load_ROOT.Node1.Startup.CoreContainer.load
+  nbSegments: 1
+  start:
+    node: Startup.CoreContainer.load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrDispatchFilter.doFilter_ROOT.Node1.Startup.SolrDispatchFilter.doFilter.Node1.AnyRequest.HttpSolrCall
+  nbSegments: 1
+  start:
+    node: doFilter
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.AnyRequest.HttpSolrCall
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrDispatchFilter.doFilter.Node1.AnyRequest.HttpSolrCall_ROOT.Node1.AnyRequest.HttpSolrCall
+  nbSegments: 2
+  start:
+    node: Node1.AnyRequest.HttpSolrCall
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: HttpSolrCall
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrDispatchFilter.doFilter.Node1.AnyRequest.HttpSolrCall_ROOT.Node1.Startup.SolrDispatchFilter.doFilter.Node1.AnyRequest.HttpSolrCall.call
+  nbSegments: 1
+  start:
+    node: Node1.AnyRequest.HttpSolrCall
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.AnyRequest.HttpSolrCall.call
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrDispatchFilter.doFilter.Node1.AnyRequest.HttpSolrCall.call_ROOT.Node1.AnyRequest.HttpSolrCall.call
+  nbSegments: 2
+  start:
+    node: Node1.AnyRequest.HttpSolrCall.call
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: call
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer_ROOT.Node1.Startup.ZKContainer
+  nbSegments: 2
+  start:
+    node: CoreContainer
+    connexionSide: LEFT
+    nConnexion: 3
+  end:
+    node: ZKContainer
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer_ROOT.Node1.Startup.SolrCores
+  nbSegments: 1
+  start:
+    node: CoreContainer
+    connexionSide: BOTTOM
+    nConnexion: 4
+  end:
+    node: SolrCores
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load_ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService
+  nbSegments: 1
+  start:
+    node: load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CoreConfigService
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService_ROOT.Node1.Startup.CoreConfigService
+  nbSegments: 2
+  start:
+    node: Startup.CoreConfigService
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: CoreConfigService
+    connexionSide: TOP
+    nConnexion: 8
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService_ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager
+  nbSegments: 1
+  start:
+    node: Startup.CoreConfigService
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Blob.SharedStoreManager
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager_ROOT.Node1.Blob.SharedStoreManager
+  nbSegments: 2
+  start:
+    node: Node1.Blob.SharedStoreManager
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: SharedStoreManager
+    connexionSide: TOP
+    nConnexion: 10
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager_ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager.load
+  nbSegments: 1
+  start:
+    node: Node1.Blob.SharedStoreManager
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Blob.SharedStoreManager.load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager.load_ROOT.Node1.Blob.SharedStoreManager.load
+  nbSegments: 2
+  start:
+    node: Node1.Blob.SharedStoreManager.load
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load.Node1.Blob.SharedStoreManager.load_ROOT.Node1.Startup.CoreContainer.load.createFromDescriptor
+  nbSegments: 1
+  start:
+    node: Node1.Blob.SharedStoreManager.load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: createFromDescriptor
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.createFromDescriptor_ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService.loadConfigSet
+  nbSegments: 1
+  start:
+    node: createFromDescriptor
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CoreConfigService.loadConfigSet
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService.loadConfigSet_ROOT.Node1.Startup.CoreConfigService.loadConfigSet
+  nbSegments: 2
+  start:
+    node: Startup.CoreConfigService.loadConfigSet
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: loadConfigSet
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.load.Startup.CoreConfigService.loadConfigSet_ROOT.Node1.Startup.CoreContainer.load.registerCore
+  nbSegments: 1
+  start:
+    node: Startup.CoreConfigService.loadConfigSet
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: registerCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.registerCore_ROOT.Node1.Startup.CoreContainer.load.Startup.SolrCores.putCore
+  nbSegments: 1
+  start:
+    node: registerCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrCores.putCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.load.Startup.SolrCores.putCore_ROOT.Node1.Startup.SolrCores.putCore
+  nbSegments: 1
+  start:
+    node: Startup.SolrCores.putCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: putCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreContainer.getCore_ROOT.Node1.Startup.CoreContainer.getCore.Startup.SolrCores.getCoreFromAnyList
+  nbSegments: 1
+  start:
+    node: getCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrCores.getCoreFromAnyList
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreContainer.getCore.Startup.SolrCores.getCoreFromAnyList_ROOT.Node1.Startup.SolrCores.getCoreFromAnyList
+  nbSegments: 1
+  start:
+    node: Startup.SolrCores.getCoreFromAnyList
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: getCoreFromAnyList
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.ZKContainer_ROOT.Node1.Startup.ZKController
+  nbSegments: 1
+  start:
+    node: ZKContainer
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: ZKController
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.ZKController_ROOT.Node1.Startup.ZKStateReader
+  nbSegments: 1
+  start:
+    node: ZKController
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: ZKStateReader
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.ZKStateReader_ROOT.Node1.Startup.ClusterState
+  nbSegments: 1
+  start:
+    node: ZKStateReader
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: ClusterState
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.ClusterState_ROOT.Node1.Startup.CollectionRef
+  nbSegments: 1
+  start:
+    node: ClusterState
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: CollectionRef
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.CoreConfigService.loadConfigSet_ROOT.Node1.Startup.CoreConfigService.loadConfigSet.Startup.ConfigSet
+  nbSegments: 1
+  start:
+    node: loadConfigSet
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.ConfigSet
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.CoreConfigService.loadConfigSet.Startup.ConfigSet_ROOT.Node1.Startup.ConfigSet
+  nbSegments: 1
+  start:
+    node: Startup.ConfigSet
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ConfigSet
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrCores_ROOT.Node1.Startup.SolrCore
+  nbSegments: 2
+  start:
+    node: SolrCores
+    connexionSide: LEFT
+    nConnexion: 6
+  end:
+    node: SolrCore
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrCore_ROOT.Node1.Startup.SolrConfig
+  nbSegments: 2
+  start:
+    node: SolrCore
+    connexionSide: LEFT
+    nConnexion: 6
+  end:
+    node: SolrConfig
+    connexionSide: BOTTOM
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrCore_ROOT.Node1.Startup.UpdateRequestProcessorChain
+  nbSegments: 1
+  start:
+    node: SolrCore
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: UpdateRequestProcessorChain
+    connexionSide: TOP
+    nConnexion: 9
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrCore_ROOT.Node1.Startup.DirectUpdateHandler2
+  nbSegments: 2
+  start:
+    node: SolrCore
+    connexionSide: RIGHT
+    nConnexion: 6
+  end:
+    node: DirectUpdateHandler2
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit_ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.CommitUpdateCommand.prepareCommit
+  nbSegments: 1
+  start:
+    node: commit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CommitUpdateCommand.prepareCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.CommitUpdateCommand.prepareCommit_ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getCommitLock
+  nbSegments: 1
+  start:
+    node: Startup.CommitUpdateCommand.prepareCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrCoreState.getCommitLock
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getCommitLock_ROOT.Node1.Startup.SolrCoreState.getCommitLock
+  nbSegments: 1
+  start:
+    node: Startup.SolrCoreState.getCommitLock
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: getCommitLock
+    connexionSide: RIGHT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getCommitLock_ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.CommitLock.lock
+  nbSegments: 1
+  start:
+    node: Startup.SolrCoreState.getCommitLock
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CommitLock.lock
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.CommitLock.lock_ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getIndexWriter
+  nbSegments: 1
+  start:
+    node: Startup.CommitLock.lock
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrCoreState.getIndexWriter
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getIndexWriter_ROOT.Node1.Startup.SolrCoreState.getIndexWriter
+  nbSegments: 1
+  start:
+    node: Startup.SolrCoreState.getIndexWriter
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: getIndexWriter
+    connexionSide: RIGHT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrCoreState.getIndexWriter_ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrIndexWriter.commit
+  nbSegments: 1
+  start:
+    node: Startup.SolrCoreState.getIndexWriter
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrIndexWriter.commit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrIndexWriter.commit_ROOT.Node1.Startup.SolrIndexWriter.commit
+  nbSegments: 2
+  start:
+    node: Startup.SolrIndexWriter.commit
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: commit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.Startup.SolrIndexWriter.commit_ROOT.Node1.Startup.DirectUpdateHandler2.commit.SolrCoreState.getCommitLock
+  nbSegments: 1
+  start:
+    node: Startup.SolrIndexWriter.commit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrCoreState.getCommitLock
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.DirectUpdateHandler2.commit.SolrCoreState.getCommitLock_ROOT.Node1.Startup.DirectUpdateHandler2.commit.SolrCoreState.CommitLock.unlock
+  nbSegments: 1
+  start:
+    node: SolrCoreState.getCommitLock
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrCoreState.CommitLock.unlock
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrIndexWriter.commit_ROOT.Node1.Startup.SolrIndexWriter.commit.SolrIndexWriter.commitInternal
+  nbSegments: 1
+  start:
+    node: commit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrIndexWriter.commitInternal
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrIndexWriter.commit.SolrIndexWriter.commitInternal_ROOT.Node1.Startup.SolrIndexWriter.commitInternal
+  nbSegments: 1
+  start:
+    node: SolrIndexWriter.commitInternal
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: commitInternal
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrIndexWriter.commitInternal_ROOT.Node1.Startup.SolrIndexWriter.commitInternal.SolrIndexWriter.prepareCommitInternal
+  nbSegments: 1
+  start:
+    node: commitInternal
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrIndexWriter.prepareCommitInternal
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrIndexWriter.commitInternal.SolrIndexWriter.prepareCommitInternal_ROOT.Node1.Startup.SolrIndexWriter.prepareCommitInternal
+  nbSegments: 2
+  start:
+    node: SolrIndexWriter.prepareCommitInternal
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: prepareCommitInternal
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Startup.SolrIndexWriter.commitInternal.SolrIndexWriter.prepareCommitInternal_ROOT.Node1.Startup.SolrIndexWriter.commitInternal.finishCommit
+  nbSegments: 1
+  start:
+    node: SolrIndexWriter.prepareCommitInternal
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: finishCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Startup.SolrIndexWriter.prepareCommitInternal_ROOT.Node1.Startup.SolrIndexWriter.prepareCommitInternal.SolrIndexWriter.WriteReaderPool
+  nbSegments: 1
+  start:
+    node: prepareCommitInternal
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrIndexWriter.WriteReaderPool
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.call_ROOT.Node1.AnyRequest.HttpSolrCall.call.HttpSolrCall.init
+  nbSegments: 1
+  start:
+    node: call
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.init
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.call.HttpSolrCall.init_ROOT.Node1.AnyRequest.HttpSolrCall.init
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.init
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: init
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init_ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.CoreContainer.getRequestHandler
+  nbSegments: 1
+  start:
+    node: init
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.CoreContainer.getRequestHandler
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.CoreContainer.getRequestHandler_ROOT.Node1.Startup.CoreContainer.getRequestHandler
+  nbSegments: 1
+  start:
+    node: Node1.Startup.CoreContainer.getRequestHandler
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getRequestHandler
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.CoreContainer.getRequestHandler_ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.getCoreByCollection
+  nbSegments: 1
+  start:
+    node: Node1.Startup.CoreContainer.getRequestHandler
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.getCoreByCollection
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.getCoreByCollection_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection
+  nbSegments: 2
+  start:
+    node: HttpSolrCall.getCoreByCollection
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getCoreByCollection
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.getCoreByCollection_ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.randomlyGetSolrCore
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.getCoreByCollection
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.randomlyGetSolrCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.randomlyGetSolrCore_ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrCore.getSolrConfig
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.randomlyGetSolrCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.SolrCore.getSolrConfig
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrCore.getSolrConfig_ROOT.Node1.Startup.SolrCore.getSolrConfig
+  nbSegments: 2
+  start:
+    node: Node1.Startup.SolrCore.getSolrConfig
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getSolrConfig
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrCore.getSolrConfig_ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrConfig.getRequestParsers
+  nbSegments: 1
+  start:
+    node: Node1.Startup.SolrCore.getSolrConfig
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.SolrConfig.getRequestParsers
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrConfig.getRequestParsers_ROOT.Node1.Startup.SolrConfig.getRequestParsers
+  nbSegments: 1
+  start:
+    node: Node1.Startup.SolrConfig.getRequestParsers
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getRequestParsers
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.Node1.Startup.SolrConfig.getRequestParsers_ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.addCommitIfAbsent
+  nbSegments: 1
+  start:
+    node: Node1.Startup.SolrConfig.getRequestParsers
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.addCommitIfAbsent
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.addCommitIfAbsent_ROOT.Node1.AnyRequest.HttpSolrCall.addCommitIfAbsent
+  nbSegments: 2
+  start:
+    node: HttpSolrCall.addCommitIfAbsent
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: addCommitIfAbsent
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.addCommitIfAbsent_ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.enqueuePullFromSharedStore
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.addCommitIfAbsent
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.enqueuePullFromSharedStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.enqueuePullFromSharedStore_ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore
+  nbSegments: 2
+  start:
+    node: HttpSolrCall.enqueuePullFromSharedStore
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: enqueuePullFromSharedStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.enqueuePullFromSharedStore_ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.execute
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.enqueuePullFromSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: HttpSolrCall.execute
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.init.HttpSolrCall.execute_ROOT.Node1.AnyRequest.HttpSolrCall.execute
+  nbSegments: 1
+  start:
+    node: HttpSolrCall.execute
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: execute
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.CoreContainer.getZKController
+  nbSegments: 1
+  start:
+    node: getCoreByCollection
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.CoreContainer.getZKController
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.CoreContainer.getZKController_ROOT.Node1.Startup.CoreContainer.getZKController
+  nbSegments: 1
+  start:
+    node: Node1.Startup.CoreContainer.getZKController
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getZKController
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.CoreContainer.getZKController_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKController.getZKStateReader
+  nbSegments: 1
+  start:
+    node: Node1.Startup.CoreContainer.getZKController
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.ZKController.getZKStateReader
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKController.getZKStateReader_ROOT.Node1.Startup.ZKController.getZKStateReader
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ZKController.getZKStateReader
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getZKStateReader
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKController.getZKStateReader_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKStateReader.getClusterState
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ZKController.getZKStateReader
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.ZKStateReader.getClusterState
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKStateReader.getClusterState_ROOT.Node1.Startup.ZKStateReader.getClusterState
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ZKStateReader.getClusterState
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getClusterState
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ZKStateReader.getClusterState_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getCollecionOrNull
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ZKStateReader.getClusterState
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.ClusterState.getCollecionOrNull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getCollecionOrNull_ROOT.Node1.Startup.ClusterState.getCollecionOrNull
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ClusterState.getCollecionOrNull
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getCollecionOrNull
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getCollecionOrNull_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getLiveNodes
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ClusterState.getCollecionOrNull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.ClusterState.getLiveNodes
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getLiveNodes_ROOT.Node1.Startup.ClusterState.getLiveNodes
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ClusterState.getLiveNodes
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getLiveNodes
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.ClusterState.getLiveNodes_ROOT.Node1.AnyRequest.HttpSolrCall.getCoreByCollection.Node1.Startup.DocCollection.getLeadersReplicas
+  nbSegments: 1
+  start:
+    node: Node1.Startup.ClusterState.getLiveNodes
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.DocCollection.getLeadersReplicas
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.addCommitIfAbsent_ROOT.Node1.AnyRequest.HttpSolrCall.addCommitIfAbsent.SolrQueryRequest.setParams
+  nbSegments: 1
+  start:
+    node: addCommitIfAbsent
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrQueryRequest.setParams
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore_ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Startup.CoreContainer.getSharedStoreManager
+  nbSegments: 1
+  start:
+    node: enqueuePullFromSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.CoreContainer.getSharedStoreManager
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Startup.CoreContainer.getSharedStoreManager_ROOT.Node1.Startup.CoreContainer.getSharedStoreManager
+  nbSegments: 2
+  start:
+    node: Node1.Startup.CoreContainer.getSharedStoreManager
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getSharedStoreManager
+    connexionSide: BOTTOM
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Startup.CoreContainer.getSharedStoreManager_ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Blob.SharedStoreManager.getCorePullTracker
+  nbSegments: 1
+  start:
+    node: Node1.Startup.CoreContainer.getSharedStoreManager
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Blob.SharedStoreManager.getCorePullTracker
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Blob.SharedStoreManager.getCorePullTracker_ROOT.Node1.Blob.SharedStoreManager.getCorePullTracker
+  nbSegments: 2
+  start:
+    node: Node1.Blob.SharedStoreManager.getCorePullTracker
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: getCorePullTracker
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Blob.SharedStoreManager.getCorePullTracker_ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Blob.CorePullTracker.enqueueForPull
+  nbSegments: 1
+  start:
+    node: Node1.Blob.SharedStoreManager.getCorePullTracker
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Blob.CorePullTracker.enqueueForPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.enqueuePullFromSharedStore.Node1.Blob.CorePullTracker.enqueueForPull_ROOT.Node1.Blob.CorePullTracker.enqueueForPull
+  nbSegments: 2
+  start:
+    node: Node1.Blob.CorePullTracker.enqueueForPull
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: enqueueForPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute_ROOT.Node1.AnyRequest.HttpSolrCall.execute.SolrQueryRequest.getCore
+  nbSegments: 1
+  start:
+    node: execute
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrQueryRequest.getCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.SolrQueryRequest.getCore_ROOT.Node1.AnyRequest.HttpSolrCall.execute.SolrCore.execute
+  nbSegments: 1
+  start:
+    node: SolrQueryRequest.getCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrCore.execute
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.SolrCore.execute_ROOT.Node1.AnyRequest.HttpSolrCall.execute.RequestHandlerBase.handleRequest
+  nbSegments: 1
+  start:
+    node: SolrCore.execute
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: RequestHandlerBase.handleRequest
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.RequestHandlerBase.handleRequest_ROOT.Node1.AnyRequest.HttpSolrCall.execute.RequestHandlerBase.enqueuePullFromSharedStore
+  nbSegments: 1
+  start:
+    node: RequestHandlerBase.handleRequest
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: RequestHandlerBase.enqueuePullFromSharedStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.RequestHandlerBase.enqueuePullFromSharedStore_ROOT.Node1.AnyRequest.HttpSolrCall.execute.Node1.Select.SearchHandler.handleRequestBody
+  nbSegments: 1
+  start:
+    node: RequestHandlerBase.enqueuePullFromSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Select.SearchHandler.handleRequestBody
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.Node1.Select.SearchHandler.handleRequestBody_ROOT.Node1.Select.SearchHandler.handleRequestBody
+  nbSegments: 2
+  start:
+    node: Node1.Select.SearchHandler.handleRequestBody
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: handleRequestBody
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.Node1.Select.SearchHandler.handleRequestBody_ROOT.Node1.AnyRequest.HttpSolrCall.execute.Node1.Update.ContentStreamHandlerBase.handleRequestBody
+  nbSegments: 1
+  start:
+    node: Node1.Select.SearchHandler.handleRequestBody
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Update.ContentStreamHandlerBase.handleRequestBody
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.AnyRequest.HttpSolrCall.execute.Node1.Update.ContentStreamHandlerBase.handleRequestBody_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody
+  nbSegments: 1
+  start:
+    node: Node1.Update.ContentStreamHandlerBase.handleRequestBody
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: handleRequestBody
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody_ROOT.Node1.Select.SearchHandler.handleRequestBody.getComponents
+  nbSegments: 1
+  start:
+    node: handleRequestBody
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: getComponents
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody.getComponents_ROOT.Node1.Select.SearchHandler.handleRequestBody.getAndPrepShardHAndler
+  nbSegments: 1
+  start:
+    node: getComponents
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: getAndPrepShardHAndler
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody.getAndPrepShardHAndler_ROOT.Node1.Select.SearchHandler.handleRequestBody.Select.SolrComponent1.prepare
+  nbSegments: 1
+  start:
+    node: getAndPrepShardHAndler
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent1.prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody.Select.SolrComponent1.prepare_ROOT.Node1.Select.SolrComponent1.prepare
+  nbSegments: 2
+  start:
+    node: Select.SolrComponent1.prepare
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody.Select.SolrComponent1.prepare_ROOT.Node1.Select.SearchHandler.handleRequestBody.Select.SolrComponent1.process
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent1.prepare
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent1.process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SearchHandler.handleRequestBody.Select.SolrComponent1.process_ROOT.Node1.Select.SolrComponent1.process
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent1.process
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SolrComponent1.prepare_ROOT.Node1.Select.SolrComponent1.prepare.Select.SolrComponent2.prepare
+  nbSegments: 1
+  start:
+    node: prepare
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent2.prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SolrComponent1.prepare.Select.SolrComponent2.prepare_ROOT.Node1.Select.SolrComponent2.prepare
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent2.prepare
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SolrComponent1.process_ROOT.Node1.Select.SolrComponent1.process.Select.SolrComponent2.process
+  nbSegments: 1
+  start:
+    node: process
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent2.process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SolrComponent1.process.Select.SolrComponent2.process_ROOT.Node1.Select.SolrComponent2.process
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent2.process
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SolrComponent2.prepare_ROOT.Node1.Select.SolrComponent2.prepare.Select.SolrComponent3.prepare
+  nbSegments: 1
+  start:
+    node: prepare
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent3.prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SolrComponent2.prepare.Select.SolrComponent3.prepare_ROOT.Node1.Select.SolrComponent3.prepare
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent3.prepare
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: prepare
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Select.SolrComponent2.process_ROOT.Node1.Select.SolrComponent2.process.Select.SolrComponent3.process
+  nbSegments: 1
+  start:
+    node: process
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Select.SolrComponent3.process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Select.SolrComponent2.process.Select.SolrComponent3.process_ROOT.Node1.Select.SolrComponent3.process
+  nbSegments: 1
+  start:
+    node: Select.SolrComponent3.process
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: process
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.SolrQueryRequest.getCore
+  nbSegments: 1
+  start:
+    node: handleRequestBody
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SolrQueryRequest.getCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.SolrQueryRequest.getCore_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Startup.SolrCore.getUpdateProcessorChain
+  nbSegments: 1
+  start:
+    node: SolrQueryRequest.getCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.SolrCore.getUpdateProcessorChain
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Startup.SolrCore.getUpdateProcessorChain_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Node1.Startup.UpdateRequestProcessorChain.createProcessor
+  nbSegments: 1
+  start:
+    node: Startup.SolrCore.getUpdateProcessorChain
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Startup.UpdateRequestProcessorChain.createProcessor
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Node1.Startup.UpdateRequestProcessorChain.createProcessor_ROOT.Node1.Startup.UpdateRequestProcessorChain.createProcessor
+  nbSegments: 2
+  start:
+    node: Node1.Startup.UpdateRequestProcessorChain.createProcessor
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: createProcessor
+    connexionSide: BOTTOM
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Node1.Startup.UpdateRequestProcessorChain.createProcessor_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader
+  nbSegments: 1
+  start:
+    node: Node1.Startup.UpdateRequestProcessorChain.createProcessor
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.JsonLoader
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader_ROOT.Node1.Update.JsonLoader
+  nbSegments: 2
+  start:
+    node: Update.JsonLoader
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: JsonLoader
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader.load
+  nbSegments: 1
+  start:
+    node: Update.JsonLoader
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.JsonLoader.load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader.load_ROOT.Node1.Update.JsonLoader.load
+  nbSegments: 1
+  start:
+    node: Update.JsonLoader.load
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: load
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.JsonLoader.load_ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.UpdateRequestProcessor1.processCommit
+  nbSegments: 1
+  start:
+    node: Update.JsonLoader.load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor1.processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.ContentStreamHandlerBase.handleRequestBody.Update.UpdateRequestProcessor1.processCommit_ROOT.Node1.Update.UpdateRequestProcessor1.processCommit
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor1.processCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.UpdateRequestProcessor1.processCommit_ROOT.Node1.Update.UpdateRequestProcessor1.processCommit.Update.UpdateRequestProcessor2.processCommit
+  nbSegments: 1
+  start:
+    node: processCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor2.processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.UpdateRequestProcessor1.processCommit.Update.UpdateRequestProcessor2.processCommit_ROOT.Node1.Update.UpdateRequestProcessor2.processCommit
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor2.processCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.UpdateRequestProcessor1.processAdd_ROOT.Node1.Update.UpdateRequestProcessor1.processAdd.Update.UpdateRequestProcessor2.processAdd
+  nbSegments: 1
+  start:
+    node: processAdd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor2.processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.UpdateRequestProcessor1.processAdd.Update.UpdateRequestProcessor2.processAdd_ROOT.Node1.Update.UpdateRequestProcessor2.processAdd
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor2.processAdd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.UpdateRequestProcessor2.processCommit_ROOT.Node1.Update.UpdateRequestProcessor2.processCommit.Update.UpdateRequestProcessor3.processCommit
+  nbSegments: 1
+  start:
+    node: processCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor3.processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.UpdateRequestProcessor2.processCommit.Update.UpdateRequestProcessor3.processCommit_ROOT.Node1.Update.UpdateRequestProcessor3.processCommit
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor3.processCommit
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.UpdateRequestProcessor2.processAdd_ROOT.Node1.Update.UpdateRequestProcessor2.processAdd.Update.UpdateRequestProcessor3.processAdd
+  nbSegments: 1
+  start:
+    node: processAdd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor3.processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.UpdateRequestProcessor2.processAdd.Update.UpdateRequestProcessor3.processAdd_ROOT.Node1.Update.UpdateRequestProcessor3.processAdd
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor3.processAdd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.JsonLoader.load_ROOT.Node1.Update.JsonLoader.load.Update.SingleThreadedJsonLoader.load
+  nbSegments: 1
+  start:
+    node: load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.SingleThreadedJsonLoader.load
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.JsonLoader.load.Update.SingleThreadedJsonLoader.load_ROOT.Node1.Update.SingleThreadedJsonLoader.load
+  nbSegments: 1
+  start:
+    node: Update.SingleThreadedJsonLoader.load
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: load
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.load_ROOT.Node1.Update.SingleThreadedJsonLoader.load.SingleThreadedJsonLoader.processUpdate
+  nbSegments: 1
+  start:
+    node: load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: SingleThreadedJsonLoader.processUpdate
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.load.SingleThreadedJsonLoader.processUpdate_ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate
+  nbSegments: 1
+  start:
+    node: SingleThreadedJsonLoader.processUpdate
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: processUpdate
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate_ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate.Update.UpdateRequestProcessor1.processAdd
+  nbSegments: 1
+  start:
+    node: processUpdate
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor1.processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate.Update.UpdateRequestProcessor1.processAdd_ROOT.Node1.Update.UpdateRequestProcessor1.processAdd
+  nbSegments: 2
+  start:
+    node: Update.UpdateRequestProcessor1.processAdd
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: processAdd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate.Update.UpdateRequestProcessor1.processAdd_ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate.Update.UpdateRequestProcessor1.processCommit
+  nbSegments: 1
+  start:
+    node: Update.UpdateRequestProcessor1.processAdd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Update.UpdateRequestProcessor1.processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.SingleThreadedJsonLoader.processUpdate.Update.UpdateRequestProcessor1.processCommit_ROOT.Node1.Update.UpdateRequestProcessor1.processCommit
+  nbSegments: 2
+  start:
+    node: Update.UpdateRequestProcessor1.processCommit
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: processCommit
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally_ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally.startIndexingBatch
+  nbSegments: 1
+  start:
+    node: addOrDeleteGoingToBeIndexedLocally
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: startIndexingBatch
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally.startIndexingBatch_ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally.acquireWriteLockAndPull
+  nbSegments: 1
+  start:
+    node: startIndexingBatch
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: acquireWriteLockAndPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally.acquireWriteLockAndPull_ROOT.Node1.Update.SharedStoreIndexBatchProcessor.addOrDeleteGoingToBeIndexedLocally.Blob.CorePuller.pullCoreFromSharedStore
+  nbSegments: 1
+  start:
+    node: acquireWriteLockAndPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePuller.pullCoreFromSharedStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Update.SharedStoreIndexBatchProcessor.hardCommitCompletedLocally_ROOT.Node1.Update.SharedStoreIndexBatchProcessor.hardCommitCompletedLocally.finishIndexingBatch
+  nbSegments: 1
+  start:
+    node: hardCommitCompletedLocally
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: finishIndexingBatch
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Update.SharedStoreIndexBatchProcessor.hardCommitCompletedLocally.finishIndexingBatch_ROOT.Node1.Update.SharedStoreIndexBatchProcessor.hardCommitCompletedLocally.Node1.Blob.CorePusher.pushCoresToSharedStore
+  nbSegments: 1
+  start:
+    node: finishIndexingBatch
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Node1.Blob.CorePusher.pushCoresToSharedStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.SharedStoreManager.load_ROOT.Node1.Blob.SharedStoreManager.load.Blob.CorePullFeeder.run
+  nbSegments: 1
+  start:
+    node: load
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePullFeeder.run
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.SharedStoreManager.load.Blob.CorePullFeeder.run_ROOT.Node1.Blob.CorePullFeeder.run
+  nbSegments: 1
+  start:
+    node: Blob.CorePullFeeder.run
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: run
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullerThread.run_ROOT.Node1.Blob.CorePullerThread.run.Blob.PullTaskQueue.removeFirst
+  nbSegments: 1
+  start:
+    node: run
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.PullTaskQueue.removeFirst
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullerThread.run.Blob.PullTaskQueue.removeFirst_ROOT.Node1.Blob.PullTaskQueue.removeFirst
+  nbSegments: 1
+  start:
+    node: Blob.PullTaskQueue.removeFirst
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: removeFirst
+    connexionSide: RIGHT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Blob.CorePullerThread.run.Blob.PullTaskQueue.removeFirst_ROOT.Node1.Blob.CorePullerThread.run.Blob.CorePullTask.pullCoreFromBlob
+  nbSegments: 1
+  start:
+    node: Blob.PullTaskQueue.removeFirst
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePullTask.pullCoreFromBlob
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullerThread.run.Blob.CorePullTask.pullCoreFromBlob_ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob
+  nbSegments: 1
+  start:
+    node: Blob.CorePullTask.pullCoreFromBlob
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: pullCoreFromBlob
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTracker.enqueuePullFromSharedStore_ROOT.Node1.Blob.CorePullTracker.enqueuePullFromSharedStore.CorePullTracker.enqueueForPull
+  nbSegments: 1
+  start:
+    node: enqueuePullFromSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: CorePullTracker.enqueueForPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullTracker.enqueuePullFromSharedStore.CorePullTracker.enqueueForPull_ROOT.Node1.Blob.CorePullTracker.enqueueForPull
+  nbSegments: 1
+  start:
+    node: CorePullTracker.enqueueForPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: enqueueForPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTracker.enqueueForPull_ROOT.Node1.Blob.CorePullTracker.enqueueForPull.Blob.CoresToPullQueue.addDeduplicated
+  nbSegments: 1
+  start:
+    node: enqueueForPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CoresToPullQueue.addDeduplicated
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullTracker.enqueueForPull.Blob.CoresToPullQueue.addDeduplicated_ROOT.Node1.Blob.CoresToPullQueue.addDeduplicated
+  nbSegments: 1
+  start:
+    node: Blob.CoresToPullQueue.addDeduplicated
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: addDeduplicated
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTracker.getCoreToPull_ROOT.Node1.Blob.CorePullTracker.getCoreToPull.Blob.CoresToPullQueue.removeFirst
+  nbSegments: 1
+  start:
+    node: getCoreToPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CoresToPullQueue.removeFirst
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullTracker.getCoreToPull.Blob.CoresToPullQueue.removeFirst_ROOT.Node1.Blob.CoresToPullQueue.removeFirst
+  nbSegments: 1
+  start:
+    node: Blob.CoresToPullQueue.removeFirst
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: removeFirst
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullFeeder.run_ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread
+  nbSegments: 1
+  start:
+    node: run
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePullerThread
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread_ROOT.Node1.Blob.CorePullerThread
+  nbSegments: 2
+  start:
+    node: Blob.CorePullerThread
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: CorePullerThread
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread_ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread.run
+  nbSegments: 1
+  start:
+    node: Blob.CorePullerThread
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePullerThread.run
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread.run_ROOT.Node1.Blob.CorePullerThread.run
+  nbSegments: 2
+  start:
+    node: Blob.CorePullerThread.run
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: run
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullFeeder.run.Blob.CorePullerThread.run_ROOT.Node1.Blob.CorePullFeeder.run.CorePullFeeder.feedTheMonster
+  nbSegments: 1
+  start:
+    node: Blob.CorePullerThread.run
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: CorePullFeeder.feedTheMonster
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullFeeder.run.CorePullFeeder.feedTheMonster_ROOT.Node1.Blob.CorePullFeeder.feedTheMonster
+  nbSegments: 1
+  start:
+    node: CorePullFeeder.feedTheMonster
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: feedTheMonster
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullFeeder.feedTheMonster_ROOT.Node1.Blob.CorePullFeeder.feedTheMonster.Blob.CorePullTracker.getCoreToPull
+  nbSegments: 1
+  start:
+    node: feedTheMonster
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePullTracker.getCoreToPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullFeeder.feedTheMonster.Blob.CorePullTracker.getCoreToPull_ROOT.Node1.Blob.CorePullTracker.getCoreToPull
+  nbSegments: 1
+  start:
+    node: Blob.CorePullTracker.getCoreToPull
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: getCoreToPull
+    connexionSide: RIGHT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Blob.CorePullFeeder.feedTheMonster.Blob.CorePullTracker.getCoreToPull_ROOT.Node1.Blob.CorePullFeeder.feedTheMonster.Blob.PullTaskQueue.addCore
+  nbSegments: 1
+  start:
+    node: Blob.CorePullTracker.getCoreToPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.PullTaskQueue.addCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullFeeder.feedTheMonster.Blob.PullTaskQueue.addCore_ROOT.Node1.Blob.PullTaskQueue.addCore
+  nbSegments: 1
+  start:
+    node: Blob.PullTaskQueue.addCore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: addCore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob_ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.SharedStoreManager.createCorePushPull
+  nbSegments: 1
+  start:
+    node: pullCoreFromBlob
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.SharedStoreManager.createCorePushPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.SharedStoreManager.createCorePushPull_ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.CorePushPull.pullUpdateFromBlob
+  nbSegments: 1
+  start:
+    node: Blob.SharedStoreManager.createCorePushPull
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePushPull.pullUpdateFromBlob
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.CorePushPull.pullUpdateFromBlob_ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob
+  nbSegments: 2
+  start:
+    node: Blob.CorePushPull.pullUpdateFromBlob
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: pullUpdateFromBlob
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.CorePushPull.pullUpdateFromBlob_ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.SharedStoreConcurrencyManager.updateCoreVersionMetadata
+  nbSegments: 1
+  start:
+    node: Blob.CorePushPull.pullUpdateFromBlob
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.SharedStoreConcurrencyManager.updateCoreVersionMetadata
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.SharedStoreConcurrencyManager.updateCoreVersionMetadata_ROOT.Node1.Blob.CorePullTask.pullCoreFromBlob.Blob.SharedStoreConcurrencyManager.recordState
+  nbSegments: 1
+  start:
+    node: Blob.SharedStoreConcurrencyManager.updateCoreVersionMetadata
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.SharedStoreConcurrencyManager.recordState
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob_ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob.CorePushPull.pullBlobFiles
+  nbSegments: 1
+  start:
+    node: pullUpdateFromBlob
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: CorePushPull.pullBlobFiles
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob.CorePushPull.pullBlobFiles_ROOT.Node1.Blob.CorePushPull.pullBlobFiles
+  nbSegments: 2
+  start:
+    node: CorePushPull.pullBlobFiles
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: pullBlobFiles
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob.CorePushPull.pullBlobFiles_ROOT.Node1.Blob.CorePushPull.pullUpdateFromBlob.moveFilesFromTempToIndexDir
+  nbSegments: 1
+  start:
+    node: CorePushPull.pullBlobFiles
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: moveFilesFromTempToIndexDir
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePushPull.pullBlobFiles_ROOT.Node1.Blob.CorePushPull.pullBlobFiles.Blob.ShareTransferManager.pullFileAsync
+  nbSegments: 1
+  start:
+    node: pullBlobFiles
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.ShareTransferManager.pullFileAsync
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePushPull.pullBlobFiles.Blob.ShareTransferManager.pullFileAsync_ROOT.Node1.Blob.CorePushPull.pullBlobFiles.CompletableFuture.wait
+  nbSegments: 1
+  start:
+    node: Blob.ShareTransferManager.pullFileAsync
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: CompletableFuture.wait
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePusher.pushCoreToSharedStore_ROOT.Node1.Blob.CorePusher.pushCoreToSharedStore.Blob.CorePusher.pushToBlobStore
+  nbSegments: 1
+  start:
+    node: pushCoreToSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePusher.pushToBlobStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePusher.pushCoreToSharedStore.Blob.CorePusher.pushToBlobStore_ROOT.Node1.Blob.CorePusher.pushToBlobStore
+  nbSegments: 1
+  start:
+    node: Blob.CorePusher.pushToBlobStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: pushToBlobStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePusher.pushToBlobStore_ROOT.Node1.Blob.CorePusher.pushToBlobStore.Blob.CorePushPull.pushToBlobStore
+  nbSegments: 1
+  start:
+    node: pushToBlobStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.CorePushPull.pushToBlobStore
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePusher.pushToBlobStore.Blob.CorePushPull.pushToBlobStore_ROOT.Node1.Blob.CorePushPull.pushToBlobStore
+  nbSegments: 1
+  start:
+    node: Blob.CorePushPull.pushToBlobStore
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: pushToBlobStore
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: HORIZONTAL
+- id: ROOT.Node1.Blob.CorePuller_ROOT.Node1.Blob.CorePushPull
+  nbSegments: 2
+  start:
+    node: CorePuller
+    connexionSide: LEFT
+    nConnexion: 6
+  end:
+    node: CorePushPull
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Startup.CoreContainer.getSharedStoreManager
+  nbSegments: 1
+  start:
+    node: pullCoreFromSharedStore
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Startup.CoreContainer.getSharedStoreManager
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Startup.CoreContainer.getSharedStoreManager_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.SharedStoreManager.getBlobStorageProvider
+  nbSegments: 1
+  start:
+    node: Startup.CoreContainer.getSharedStoreManager
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.SharedStoreManager.getBlobStorageProvider
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.SharedStoreManager.getBlobStorageProvider_ROOT.Node1.Blob.SharedStoreManager.getBlobStorageProvider
+  nbSegments: 2
+  start:
+    node: Blob.SharedStoreManager.getBlobStorageProvider
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: getBlobStorageProvider
+    connexionSide: BOTTOM
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.SharedStoreManager.getBlobStorageProvider_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.BlobStorageProvider.getClient
+  nbSegments: 1
+  start:
+    node: Blob.SharedStoreManager.getBlobStorageProvider
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.BlobStorageProvider.getClient
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.BlobStorageProvider.getClient_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.BlobClient.pullCoreMetadata
+  nbSegments: 1
+  start:
+    node: Blob.BlobStorageProvider.getClient
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.BlobClient.pullCoreMetadata
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.BlobClient.pullCoreMetadata_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.SharedStoreManager.createCorePullPush
+  nbSegments: 1
+  start:
+    node: Blob.BlobClient.pullCoreMetadata
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.SharedStoreManager.createCorePullPush
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.SharedStoreManager.createCorePullPush_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.ShareStoreConcurrencyController.updateCoreVersionMetadata
+  nbSegments: 1
+  start:
+    node: Blob.SharedStoreManager.createCorePullPush
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.ShareStoreConcurrencyController.updateCoreVersionMetadata
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.ShareStoreConcurrencyController.updateCoreVersionMetadata_ROOT.Node1.Blob.CorePuller.pullCoreFromSharedStore.Blob.ShareStoreConcurrencyController.recordState
+  nbSegments: 1
+  start:
+    node: Blob.ShareStoreConcurrencyController.updateCoreVersionMetadata
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: Blob.ShareStoreConcurrencyController.recordState
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node1.EBS.BlobDataDir_ROOT.Node1.EBS.BlobDataDir.toto
+  nbSegments: 1
+  start:
+    node: BlobDataDir
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node1.EBS.BlobDataDir.toto_ROOT.Node1.EBS.BlobDataDir.titi
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: titi
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class1.func1_ROOT.Node2.class1.func1.toto
+  nbSegments: 1
+  start:
+    node: func1
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node2.class1.func1.toto_ROOT.Node2.class1.func1.titi
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: titi
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class1.func1.titi_ROOT.Node2.class1.func1.tutu
+  nbSegments: 1
+  start:
+    node: titi
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: tutu
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class1.func1.tutu_ROOT.Node2.class1.func1.solr.Node1.func
+  nbSegments: 1
+  start:
+    node: tutu
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: solr.Node1.func
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class1.func1.solr.Node1.func_ROOT.Node2.class1.func1.this.Function
+  nbSegments: 1
+  start:
+    node: solr.Node1.func
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: this.Function
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class1.func1.this.Function_ROOT.Node2.class1.func1.this.toto
+  nbSegments: 1
+  start:
+    node: this.Function
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: this.toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class2.func1_ROOT.Node2.class2.func1.toto
+  nbSegments: 1
+  start:
+    node: func1
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Node2.class2.func1.toto_ROOT.Node2.class2.func1.titi
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: titi
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class2.func1.titi_ROOT.Node2.class2.func1.tutu
+  nbSegments: 1
+  start:
+    node: titi
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: tutu
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class2.func1.tutu_ROOT.Node2.class2.func1.solr.Node1.func
+  nbSegments: 1
+  start:
+    node: tutu
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: solr.Node1.func
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class2.func1.solr.Node1.func_ROOT.Node2.class2.func1.this.Function
+  nbSegments: 1
+  start:
+    node: solr.Node1.func
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: this.Function
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Node2.class2.func1.this.Function_ROOT.Node2.class2.func1.toto
+  nbSegments: 1
+  start:
+    node: this.Function
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.MyScenario.Launch_ROOT.MyScenario.Launch.ROOT.Node1.Startup.Main.start
+  nbSegments: 1
+  start:
+    node: Launch
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ROOT.Node1.Startup.Main.start
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.MyScenario.Launch.ROOT.Node1.Startup.Main.start_ROOT.Node1.Startup.Main.start
+  nbSegments: 1
+  start:
+    node: ROOT.Node1.Startup.Main.start
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: start
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL

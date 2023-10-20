@@ -1,0 +1,1116 @@
+ROOT:
+  center:
+  - -260.522581930555
+  - -36.15861220373681
+  subNodes:
+  - Node1:
+      center:
+      - -36.00811738207008
+      - -25.421135052946383
+      subNodes:
+      - Startup:
+          center:
+          - 65.52775766799516
+          - 147.8317981955783
+          subNodes:
+          - Main:
+              center:
+              - -26.04164898348182
+              - 158.59558126733606
+              subNodes:
+              - start:
+                  center:
+                  - 0.0
+                  - -2.0
+                  subNodes:
+                  - Startup.Jetty:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - Startup.Jetty.doStart:
+                      center:
+                      - 0.0
+                      - -5.75
+          - Jetty:
+              center:
+              - -45.9004802712402
+              - 130.40214331377013
+              subNodes:
+              - doStart:
+                  center:
+                  - 19.858831287758367
+                  - -1.5565620464340808
+                  subNodes:
+                  - Startup.SolrDispatchFilter.Init:
+                      center:
+                      - 0.0
+                      - -1.5000000000000002
+              - doFilter:
+                  center:
+                  - -19.858831287758367
+                  - -2.443437953565919
+                  subNodes:
+                  - Startup.SolrDispatchFilter.doFilter:
+                      center:
+                      - 0.0
+                      - -1.5000000000000002
+          - SolrDispatchFilter:
+              center:
+              - -47.06786224548924
+              - 95.62603530770863
+              subNodes:
+              - Init:
+                  center:
+                  - 21.026213262007246
+                  - -8.499605120307436
+                  subNodes:
+                  - Startup.CoreContainer:
+                      center:
+                      - -7.993605777301127e-15
+                      - 2.833064932174563
+                  - Startup.CoreContainer.load:
+                      center:
+                      - -3.885780586188048e-16
+                      - -5.833064932174563
+              - doFilter:
+                  center:
+                  - -18.691449313509395
+                  - 0.4912532844080362
+                  subNodes:
+                  - Node1.AnyRequest.HttpSolrCall:
+                      center:
+                      - -2.842170943040401e-14
+                      - 6.841416768073961
+                  - Node1.AnyRequest.HttpSolrCall.call:
+                      center:
+                      - 0.0
+                      - -9.84141676807396
+          - CoreContainer:
+              center:
+              - -21.926690290816566
+              - 14.121020603521846
+              subNodes:
+              - load:
+                  center:
+                  - -4.1149586926652635
+                  - 12.895710886836158
+                  subNodes:
+                  - Startup.CoreConfigService:
+                      center:
+                      - 4.440892098500626e-16
+                      - 20.5
+                  - Node1.Blob.SharedStoreManager:
+                      center:
+                      - 4.440892098500626e-16
+                      - 12.0
+                  - Node1.Blob.SharedStoreManager.load:
+                      center:
+                      - 4.440892098500626e-16
+                      - 3.5
+                  - createFromDescriptor:
+                      center:
+                      - 4.440892098500626e-16
+                      - -3.25
+                  - Startup.CoreConfigService.loadConfigSet:
+                      center:
+                      - 4.440892098500626e-16
+                      - -10.0
+                  - registerCore:
+                      center:
+                      - 4.440892098500626e-16
+                      - -16.75
+                  - Startup.SolrCores.putCore:
+                      center:
+                      - 4.440892098500626e-16
+                      - -23.5
+              - getRequestHandler:
+                  center:
+                  - -29.70576794433652
+                  - 31.456361995426317
+              - getZKController:
+                  center:
+                  - -26.110229284543067
+                  - -0.4488653796147908
+              - getCore:
+                  center:
+                  - 25.442892407855833
+                  - -9.001721788424227
+                  subNodes:
+                  - Startup.SolrCores.getCoreFromAnyList:
+                      center:
+                      - 4.440892098500626e-16
+                      - -1.5
+              - getSharedStoreManager:
+                  center:
+                  - -20.857440951137114
+                  - -44.145710886836156
+          - ZKContainer:
+              center:
+              - -103.62465519037166
+              - 23.982219889454058
+              subNodes:
+              - getZKController:
+                  center:
+                  - 0.0
+                  - -2.0
+          - ZKController:
+              center:
+              - -103.9473744358008
+              - -21.209790862483395
+              subNodes:
+              - getZKStateReader:
+                  center:
+                  - 0.0
+                  - -2.0
+          - ZKStateReader:
+              center:
+              - -103.62465519037168
+              - -36.747735032680495
+              subNodes:
+              - getClusterState:
+                  center:
+                  - -2.7755575615628914e-17
+                  - -2.0
+          - ClusterState:
+              center:
+              - -103.62465519037174
+              - -59.07000728896051
+              subNodes:
+              - getCollecionOrNull:
+                  center:
+                  - 0.4814440622103273
+                  - 4.098146819401251
+              - getLiveNodes:
+                  center:
+                  - -1.7711436330257784
+                  - -8.09814681940125
+          - CollectionRef:
+              center:
+              - -103.62465519037171
+              - -84.71610493123639
+          - SolrConfig:
+              center:
+              - -83.37435314030543
+              - -8.139243290274585
+              subNodes:
+              - getRequestParsers:
+                  center:
+                  - 0.0
+                  - -2.0
+          - CoreConfigService:
+              center:
+              - 35.2463749654697
+              - 0.9006732659796124
+              subNodes:
+              - loadConfigSet:
+                  center:
+                  - -2.220446049250313e-16
+                  - -2.0
+                  subNodes:
+                  - Startup.ConfigSet:
+                      center:
+                      - -1.1102230246251565e-16
+                      - -1.5
+          - ConfigSet:
+              center:
+              - 35.3885954628737
+              - -18.482117562097407
+          - SolrCores:
+              center:
+              - -9.798459138002265
+              - -49.447680627781864
+              subNodes:
+              - putCore:
+                  center:
+                  - -16.24318984547954
+                  - -2.3061924358220653
+              - getCoreDescriptor:
+                  center:
+                  - -7.749362256334251
+                  - -1.4896792736298914
+              - getCoreFromAnyList:
+                  center:
+                  - 13.31466125504155
+                  - -2.510320726370109
+          - SolrCore:
+              center:
+              - -60.22137394882513
+              - -71.7312223966468
+              subNodes:
+              - getSolrConfig:
+                  center:
+                  - -6.9431330472103
+                  - -2.0
+              - getUpdateProcessorChain:
+                  center:
+                  - 4.337982832618025
+                  - -2.0
+          - UpdateRequestProcessorChain:
+              center:
+              - -70.93167437800966
+              - -111.3265109563031
+              subNodes:
+              - createProcessor:
+                  center:
+                  - 0.0
+                  - -2.0
+          - SolrCoreState:
+              center:
+              - -9.572031269282835
+              - -107.26521314165382
+              subNodes:
+              - getIndexWriter:
+                  center:
+                  - 0.5027021834681386
+                  - -11.371038875623212
+              - getCommitLock:
+                  center:
+                  - -0.2580669903350913
+                  - 7.371038875623212
+          - DirectUpdateHandler2:
+              center:
+              - 24.32828828882822
+              - -115.95412199339864
+              subNodes:
+              - addDoc:
+                  center:
+                  - -12.082417582417582
+                  - -24.82412990970794
+              - commit:
+                  center:
+                  - 3.404696132596686
+                  - -2.0
+                  subNodes:
+                  - Startup.CommitUpdateCommand.prepareCommit:
+                      center:
+                      - 0.0
+                      - 28.355194378115854
+                  - Startup.SolrCoreState.getCommitLock:
+                      center:
+                      - 0.0
+                      - 18.809947727368044
+                  - Startup.CommitLock.lock:
+                      center:
+                      - 0.0
+                      - 10.309947727368044
+                  - Startup.SolrCoreState.getIndexWriter:
+                      center:
+                      - 2.6645352591003757e-15
+                      - 0.06786997612162038
+                  - Startup.SolrIndexWriter.commit:
+                      center:
+                      - -1.2878587085651816e-14
+                      - -11.219454425872426
+                  - SolrCoreState.getCommitLock:
+                      center:
+                      - 0.0
+                      - -22.855194378115854
+                  - SolrCoreState.CommitLock.unlock:
+                      center:
+                      - 0.0
+                      - -31.355194378115854
+          - SolrIndexWriter:
+              center:
+              - 89.3482872861481
+              - -152.90438895985517
+              subNodes:
+              - commit:
+                  center:
+                  - -15.135453569939045
+                  - 11.941192307480865
+                  subNodes:
+                  - SolrIndexWriter.commitInternal:
+                      center:
+                      - 0.0
+                      - -1.5
+              - commitInternal:
+                  center:
+                  - -15.13545356993906
+                  - -6.189736972922979
+                  subNodes:
+                  - SolrIndexWriter.prepareCommitInternal:
+                      center:
+                      - 0.0
+                      - 1.1309292804038429
+                  - finishCommit:
+                      center:
+                      - 0.0
+                      - -5.880929280403842
+              - prepareCommitInternal:
+                  center:
+                  - 13.48572507066227
+                  - -15.941192307480867
+                  subNodes:
+                  - SolrIndexWriter.WriteReaderPool:
+                      center:
+                      - 0.0
+                      - -1.5
+      - AnyRequest:
+          center:
+          - -149.91727196514552
+          - 103.44810282797292
+          subNodes:
+          - HttpSolrCall:
+              center:
+              - 0.0
+              - -2.000000000000007
+              subNodes:
+              - call:
+                  center:
+                  - -8.540289471538332
+                  - 114.70634624987629
+                  subNodes:
+                  - HttpSolrCall.init:
+                      center:
+                      - 0.0
+                      - -1.5
+              - init:
+                  center:
+                  - -8.540289471538365
+                  - 52.73172614633244
+                  subNodes:
+                  - Node1.Startup.CoreContainer.getRequestHandler:
+                      center:
+                      - 0.0
+                      - 39.97935182023457
+                  - HttpSolrCall.getCoreByCollection:
+                      center:
+                      - 2.4868995751603507e-14
+                      - 23.517768262270287
+                  - HttpSolrCall.randomlyGetSolrCore:
+                      center:
+                      - 0.0
+                      - 6.993483792012427
+                  - Node1.Startup.SolrCore.getSolrConfig:
+                      center:
+                      - 0.0
+                      - -1.5065162079875734
+                  - Node1.Startup.SolrConfig.getRequestParsers:
+                      center:
+                      - 0.0
+                      - -15.737274068997692
+                  - HttpSolrCall.addCommitIfAbsent:
+                      center:
+                      - 0.0
+                      - -25.97935182023457
+                  - HttpSolrCall.enqueuePullFromSharedStore:
+                      center:
+                      - 0.0
+                      - -34.47935182023457
+                  - HttpSolrCall.execute:
+                      center:
+                      - 0.0
+                      - -42.97935182023457
+              - getCoreByCollection:
+                  center:
+                  - 49.72263635104862
+                  - 16.19508009032971
+                  subNodes:
+                  - Node1.Startup.CoreContainer.getZKController:
+                      center:
+                      - -1.7041923427996153e-14
+                      - 44.610770501196136
+                  - Node1.Startup.ZKController.getZKStateReader:
+                      center:
+                      - 4.440892098500626e-16
+                      - 7.7288244148057075
+                  - Node1.Startup.ZKStateReader.getClusterState:
+                      center:
+                      - 4.440892098500626e-16
+                      - -7.8091197553913965
+                  - Node1.Startup.ClusterState.getCollecionOrNull:
+                      center:
+                      - -1.9872992140790302e-14
+                      - -24.03324519227016
+                  - Node1.Startup.ClusterState.getLiveNodes:
+                      center:
+                      - -2.7200464103316335e-14
+                      - -36.22953883107267
+                  - Node1.Startup.DocCollection.getLeadersReplicas:
+                      center:
+                      - 4.440892098500626e-16
+                      - -47.610770501196136
+              - addCommitIfAbsent:
+                  center:
+                  - -47.50967120460707
+                  - 8.067049765876112
+                  subNodes:
+                  - SolrQueryRequest.setParams:
+                      center:
+                      - 0.0
+                      - -1.5
+              - enqueuePullFromSharedStore:
+                  center:
+                  - 26.475157866244416
+                  - -110.20634624987629
+                  subNodes:
+                  - Node1.Startup.CoreContainer.getSharedStoreManager:
+                      center:
+                      - 0.0
+                      - 7.0
+                  - Node1.Blob.SharedStoreManager.getCorePullTracker:
+                      center:
+                      - 0.0
+                      - -1.5
+                  - Node1.Blob.CorePullTracker.enqueueForPull:
+                      center:
+                      - 0.0
+                      - -10.0
+              - execute:
+                  center:
+                  - -8.540289471538332
+                  - -27.534033512654155
+                  subNodes:
+                  - SolrQueryRequest.getCore:
+                      center:
+                      - 0.0
+                      - 19.837181002080634
+                  - SolrCore.execute:
+                      center:
+                      - 0.0
+                      - 11.337181002080634
+                  - RequestHandlerBase.handleRequest:
+                      center:
+                      - 0.0
+                      - 2.83718100208063
+                  - RequestHandlerBase.enqueuePullFromSharedStore:
+                      center:
+                      - 5.329070518200751e-15
+                      - -5.66281899791937
+                  - Node1.Select.SearchHandler.handleRequestBody:
+                      center:
+                      - 0.0
+                      - -14.33718100208063
+                  - Node1.Update.ContentStreamHandlerBase.handleRequestBody:
+                      center:
+                      - 0.0
+                      - -22.837181002080634
+      - Select:
+          center:
+          - -253.91998973244193
+          - -110.98970156173456
+          subNodes:
+          - SearchHandler:
+              center:
+              - 14.921367082982428
+              - 44.690427534744664
+              subNodes:
+              - handleRequestBody:
+                  center:
+                  - 4.440892098500626e-16
+                  - -2.0
+                  subNodes:
+                  - getComponents:
+                      center:
+                      - 1.6076029396572267e-13
+                      - 9.5
+                  - getAndPrepShardHAndler:
+                      center:
+                      - 4.707345624410664e-14
+                      - 4.5
+                  - Select.SolrComponent1.prepare:
+                      center:
+                      - -1.234568003383174e-13
+                      - -2.25
+                  - Select.SolrComponent1.process:
+                      center:
+                      - 1.2273515537231106e-13
+                      - -10.75
+          - SolrComponent1:
+              center:
+              - -1.5002299202943377
+              - 2.381645697816391
+              subNodes:
+              - prepare:
+                  center:
+                  - -16.421597003276688
+                  - -2.0
+                  subNodes:
+                  - Select.SolrComponent2.prepare:
+                      center:
+                      - 1.6653345369377348e-16
+                      - -1.5000000000000002
+              - process:
+                  center:
+                  - 16.421597003276688
+                  - -2.0
+                  subNodes:
+                  - Select.SolrComponent2.process:
+                      center:
+                      - 0.0
+                      - -1.5
+          - SolrComponent2:
+              center:
+              - -1.5002299202915328
+              - -31.460764279012487
+              subNodes:
+              - prepare:
+                  center:
+                  - -16.42159700327405
+                  - -2.0
+                  subNodes:
+                  - Select.SolrComponent3.prepare:
+                      center:
+                      - 0.0
+                      - -1.5
+              - process:
+                  center:
+                  - 16.42159700327405
+                  - -2.0
+                  subNodes:
+                  - Select.SolrComponent3.process:
+                      center:
+                      - 0.0
+                      - -1.5
+          - SolrComponent3:
+              center:
+              - -1.5016750069994593
+              - -63.190427534744664
+              subNodes:
+              - prepare:
+                  center:
+                  - -16.420151916571562
+                  - -2.0
+              - process:
+                  center:
+                  - 16.42304208998197
+                  - -2.0
+      - Update:
+          center:
+          - -98.04411266271975
+          - -129.20692380038003
+          subNodes:
+          - ContentStreamHandlerBase:
+              center:
+              - -60.41344877396353
+              - 48.52408699849139
+              subNodes:
+              - handleRequestBody:
+                  center:
+                  - 0.0
+                  - -1.9999999999999982
+                  subNodes:
+                  - SolrQueryRequest.getCore:
+                      center:
+                      - -1.7141843500212417e-13
+                      - 22.359945467358116
+                  - Startup.SolrCore.getUpdateProcessorChain:
+                      center:
+                      - -5.773159728050814e-14
+                      - 13.859945467358116
+                  - Node1.Startup.UpdateRequestProcessorChain.createProcessor:
+                      center:
+                      - -8.881784197001252e-16
+                      - 5.359945467358116
+                  - Update.JsonLoader:
+                      center:
+                      - 1.127986593019159e-13
+                      - -3.1400545326418836
+                  - Update.JsonLoader.load:
+                      center:
+                      - 3.6415315207705135e-14
+                      - -14.711266039511173
+                  - Update.UpdateRequestProcessor1.processCommit:
+                      center:
+                      - 1.127986593019159e-13
+                      - -25.359945467358116
+          - UpdateRequestProcessor1:
+              center:
+              - -37.277721796574944
+              - -23.044315967028943
+              subNodes:
+              - processCommit:
+                  center:
+                  - -23.135726977388508
+                  - -2.4894572968404978
+                  subNodes:
+                  - Update.UpdateRequestProcessor2.processCommit:
+                      center:
+                      - 8.049116928532385e-16
+                      - -1.5
+              - processAdd:
+                  center:
+                  - 23.13572697738851
+                  - -1.5105427031595027
+                  subNodes:
+                  - Update.UpdateRequestProcessor2.processAdd:
+                      center:
+                      - 0.0
+                      - -1.5
+          - UpdateRequestProcessor2:
+              center:
+              - -37.277721796574916
+              - -51.40880304214651
+              subNodes:
+              - processCommit:
+                  center:
+                  - -23.135726977388458
+                  - -2.0
+                  subNodes:
+                  - Update.UpdateRequestProcessor3.processCommit:
+                      center:
+                      - 0.0
+                      - -1.5
+              - processAdd:
+                  center:
+                  - 23.135726977388458
+                  - -2.0
+                  subNodes:
+                  - Update.UpdateRequestProcessor3.processAdd:
+                      center:
+                      - 0.0
+                      - -1.5
+          - UpdateRequestProcessor3:
+              center:
+              - -37.7047604231844
+              - -79.35095589794898
+              subNodes:
+              - processCommit:
+                  center:
+                  - -22.708688350779
+                  - -2.0
+              - processAdd:
+                  center:
+                  - 23.56276560399788
+                  - -2.0
+          - JsonLoader:
+              center:
+              - 13.240110806158347
+              - 27.812820958980208
+              subNodes:
+              - load:
+                  center:
+                  - 0.0
+                  - -2.0
+                  subNodes:
+                  - Update.SingleThreadedJsonLoader.load:
+                      center:
+                      - 0.0
+                      - -1.5
+          - SingleThreadedJsonLoader:
+              center:
+              - 48.41203682656462
+              - 5.203868751329406
+              subNodes:
+              - load:
+                  center:
+                  - -1.7141843500212417e-13
+                  - 13.108952207650802
+                  subNodes:
+                  - SingleThreadedJsonLoader.processUpdate:
+                      center:
+                      - 0.0
+                      - -1.5
+              - processUpdate:
+                  center:
+                  - -3.885780586188048e-16
+                  - -12.858952207650802
+                  subNodes:
+                  - Update.UpdateRequestProcessor1.processAdd:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - Update.UpdateRequestProcessor1.processCommit:
+                      center:
+                      - 0.0
+                      - -5.75
+          - SharedStoreIndexBatchProcessor:
+              center:
+              - 45.466743119103356
+              - -71.38403246584951
+              subNodes:
+              - addOrDeleteGoingToBeIndexedLocally:
+                  center:
+                  - -17.22532188841202
+                  - -2.0
+                  subNodes:
+                  - startIndexingBatch:
+                      center:
+                      - 0.0
+                      - 5.25
+                  - acquireWriteLockAndPull:
+                      center:
+                      - 0.0
+                      - 0.25
+                  - Blob.CorePuller.pullCoreFromSharedStore:
+                      center:
+                      - 0.0
+                      - -6.5
+              - hardCommitCompletedLocally:
+                  center:
+                  - 21.160944206008587
+                  - -2.0
+                  subNodes:
+                  - finishIndexingBatch:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - Node1.Blob.CorePusher.pushCoresToSharedStore:
+                      center:
+                      - 0.0
+                      - -4.0
+      - Blob:
+          center:
+          - 151.3720809661446
+          - -167.20257798298732
+          subNodes:
+          - SharedStoreManager:
+              center:
+              - -9.232586919066541
+              - 109.70640571797745
+              subNodes:
+              - load:
+                  center:
+                  - 79.47994452654578
+                  - -1.9099628626618248
+                  subNodes:
+                  - Blob.CorePullFeeder.run:
+                      center:
+                      - 0.0
+                      - -1.5
+              - getCorePullTracker:
+                  center:
+                  - -84.11135281782532
+                  - 1.5446777931535145
+              - getBlobStorageProvider:
+                  center:
+                  - -7.133465416388921
+                  - -7.340037137338175
+          - CorePullerThread:
+              center:
+              - 114.84839672840064
+              - -25.715296644940736
+              subNodes:
+              - run:
+                  center:
+                  - 0.0
+                  - -2.0
+                  subNodes:
+                  - Blob.PullTaskQueue.removeFirst:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - Blob.CorePullTask.pullCoreFromBlob:
+                      center:
+                      - 0.0
+                      - -5.75
+          - CorePullTracker:
+              center:
+              - -89.5748438234771
+              - 26.06596591149271
+              subNodes:
+              - enqueuePullFromSharedStore:
+                  center:
+                  - -23.71141547154148
+                  - 11.770154087537769
+                  subNodes:
+                  - CorePullTracker.enqueueForPull:
+                      center:
+                      - 0.0
+                      - -1.4999999999999998
+              - enqueueForPull:
+                  center:
+                  - -23.71141547154149
+                  - -15.160428782833757
+                  subNodes:
+                  - Blob.CoresToPullQueue.addDeduplicated:
+                      center:
+                      - 0.0
+                      - -1.5
+              - getCoreToPull:
+                  center:
+                  - 30.406694441498555
+                  - -15.770154087537769
+                  subNodes:
+                  - Blob.CoresToPullQueue.removeFirst:
+                      center:
+                      - 4.440892098500626e-16
+                      - -1.5
+          - CoresToPullQueue:
+              center:
+              - -86.37271805580585
+              - -11.132931894051492
+              subNodes:
+              - removeFirst:
+                  center:
+                  - 27.20456867382729
+                  - -2.1334815337856403
+              - addDeduplicated:
+                  center:
+                  - -26.913541239212726
+                  - -1.86651846621436
+          - CorePullFeeder:
+              center:
+              - 70.24735760748027
+              - 45.84017878586484
+              subNodes:
+              - run:
+                  center:
+                  - 2.842170943040401e-14
+                  - 15.360449424321487
+                  subNodes:
+                  - Blob.CorePullerThread:
+                      center:
+                      - 3.197442310920451e-14
+                      - 15.683917537588428
+                  - Blob.CorePullerThread.run:
+                      center:
+                      - 0.0
+                      - -2.3983362969919018
+                  - CorePullFeeder.feedTheMonster:
+                      center:
+                      - -2.1316282072803006e-14
+                      - -18.683917537588428
+              - feedTheMonster:
+                  center:
+                  - 0.0
+                  - -32.294366961909915
+                  subNodes:
+                  - Blob.CorePullTracker.getCoreToPull:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - Blob.PullTaskQueue.addCore:
+                      center:
+                      - 0.0
+                      - -5.75
+          - PullTaskQueue:
+              center:
+              - 70.71706248383848
+              - -16.670772795694738
+              subNodes:
+              - addCore:
+                  center:
+                  - -0.469704876358209
+                  - 5.044523849245991
+              - removeFirst:
+                  center:
+                  - 1.6653345369377348e-16
+                  - -9.04452384924599
+          - CorePullTask:
+              center:
+              - 114.8483967284007
+              - -73.25982049418795
+              subNodes:
+              - pullCoreFromBlob:
+                  center:
+                  - 0.0
+                  - -2.0
+                  subNodes:
+                  - Blob.SharedStoreManager.createCorePushPull:
+                      center:
+                      - 0.0
+                      - 11.25
+                  - Blob.CorePushPull.pullUpdateFromBlob:
+                      center:
+                      - 3.366751322175787e-14
+                      - 2.75
+                  - Blob.SharedStoreConcurrencyManager.updateCoreVersionMetadata:
+                      center:
+                      - 0.0
+                      - -5.75
+                  - Blob.SharedStoreConcurrencyManager.recordState:
+                      center:
+                      - 0.0
+                      - -14.25
+          - CorePushPull:
+              center:
+              - 28.96473066397028
+              - -101.7967907850188
+              subNodes:
+              - pullUpdateFromBlob:
+                  center:
+                  - -4.007821850849359
+                  - 7.399365418316641
+                  subNodes:
+                  - CorePushPull.pullBlobFiles:
+                      center:
+                      - 0.0
+                      - 1.1002866519801957
+                  - moveFilesFromTempToIndexDir:
+                      center:
+                      - 0.0
+                      - -5.850286651980196
+              - pullBlobFiles:
+                  center:
+                  - 19.98123711682581
+                  - -9.749652070296834
+                  subNodes:
+                  - Blob.ShareTransferManager.pullFileAsync:
+                      center:
+                      - 0.0
+                      - 2.75
+                  - CompletableFuture.wait:
+                      center:
+                      - 0.0
+                      - -5.75
+              - pushToBlobStore:
+                  center:
+                  - -25.38681651596744
+                  - -11.06131024548365
+          - CorePusher:
+              center:
+              - -99.93038593130305
+              - -84.26377461912458
+              subNodes:
+              - pushCoreToSharedStore:
+                  center:
+                  - 5.551115123125783e-16
+                  - 22.344326411377878
+                  subNodes:
+                  - Blob.CorePusher.pushToBlobStore:
+                      center:
+                      - 0.0
+                      - -1.4999999999999998
+              - pushToBlobStore:
+                  center:
+                  - 4.440892098500626e-16
+                  - -26.344326411377878
+                  subNodes:
+                  - Blob.CorePushPull.pushToBlobStore:
+                      center:
+                      - 0.0
+                      - -1.5
+          - CorePuller:
+              center:
+              - 29.18583921861627
+              - -24.385138208610595
+              subNodes:
+              - pullCoreFromSharedStore:
+                  center:
+                  - 0.0
+                  - -2.0
+                  subNodes:
+                  - Startup.CoreContainer.getSharedStoreManager:
+                      center:
+                      - 0.0
+                      - 24.0
+                  - Blob.SharedStoreManager.getBlobStorageProvider:
+                      center:
+                      - 0.0
+                      - 15.5
+                  - Blob.BlobStorageProvider.getClient:
+                      center:
+                      - 0.0
+                      - 7.0
+                  - Blob.BlobClient.pullCoreMetadata:
+                      center:
+                      - 0.0
+                      - -1.5
+                  - Blob.SharedStoreManager.createCorePullPush:
+                      center:
+                      - 0.0
+                      - -10.0
+                  - Blob.ShareStoreConcurrencyController.updateCoreVersionMetadata:
+                      center:
+                      - 0.0
+                      - -18.5
+                  - Blob.ShareStoreConcurrencyController.recordState:
+                      center:
+                      - 0.0
+                      - -27.0
+      - EBS:
+          center:
+          - 12.867363429676562
+          - -319.92737946291436
+          subNodes:
+          - BlobDataDir:
+              center:
+              - 0.0
+              - -2.0
+              subNodes:
+              - toto:
+                  center:
+                  - 0.0
+                  - 1.0
+              - titi:
+                  center:
+                  - 0.0
+                  - -4.0
+  - Node2:
+      center:
+      - 302.2780456260658
+      - 21.615286668838475
+      subNodes:
+      - class1:
+          center:
+          - -9.5
+          - -2.0
+          subNodes:
+          - func1:
+              center:
+              - 0.0
+              - -2.0
+              subNodes:
+              - toto:
+                  center:
+                  - 0.0
+                  - 16.25
+              - titi:
+                  center:
+                  - 0.0
+                  - 11.25
+              - tutu:
+                  center:
+                  - 0.0
+                  - 6.25
+              - solr.Node1.func:
+                  center:
+                  - 0.0
+                  - -0.5
+              - this.Function:
+                  center:
+                  - 0.0
+                  - -9.0
+              - this.toto:
+                  center:
+                  - 0.0
+                  - -17.5
+      - class2:
+          center:
+          - 9.5
+          - -2.0
+          subNodes:
+          - func1:
+              center:
+              - 0.0
+              - -2.0
+              subNodes:
+              - toto:
+                  center:
+                  - 0.0
+                  - 14.5
+              - titi:
+                  center:
+                  - 0.0
+                  - 9.5
+              - tutu:
+                  center:
+                  - 0.0
+                  - 4.5
+              - solr.Node1.func:
+                  center:
+                  - 0.0
+                  - -2.25
+              - this.Function:
+                  center:
+                  - 0.0
+                  - -10.75
+              - toto:
+                  center:
+                  - 0.0
+                  - -17.5
+  - MyScenario:
+      center:
+      - 3.4779913024432254
+      - 344.09851451586076
+      subNodes:
+      - Launch:
+          center:
+          - 4.440892098500626e-16
+          - -2.0
+          subNodes:
+          - ROOT.Node1.Startup.Main.start:
+              center:
+              - 4.440892098500626e-16
+              - -1.5

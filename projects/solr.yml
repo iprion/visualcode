@@ -1,0 +1,266 @@
+ClassDefinition:
+  name: Root
+  color: [187,187,187,1] #LIGHT_GRAY
+  subNodes:
+  - ClassDefinition:
+      name: Node1
+      color: [221,221,221,1] #LIGHTER_GRAY
+      subNodes:
+      - ClassDefinition:
+          name: Startup
+          color: [88,196,221,0.1] #BLUE      
+          subNodes:
+          - ClassDefinition:   
+              name: Main     
+              subNodes:
+              - FunctionDefinition: 
+                  name: start
+                  subNodes:
+                  - FunctionCall:
+                      name: jetty.server.Server.doStart
+          - ClassDefinition:
+              name: jetty.server.Server
+              subNodes:
+              - FunctionDefinition:
+                  name: doStart
+                  subNodes:
+                  - FunctionCall:
+                      name: SolrDispatchFilter.Init
+          - ClassDefinition: 
+              name: SolrDispatchFilter        
+              subNodes:
+              - FunctionDefinition:
+                  name: Init
+                  subNodes: 
+                  - FunctionCall:
+                      name: CoreContainer.Load
+          - ClassDefinition: 
+              name: CoreContainer       
+              subNodes:
+              - FunctionDefinition:
+                  name: load
+                  subNodes:
+                  - FunctionCall:
+                      name: CoreConfigService.new
+                  - FunctionCall:
+                      name: SharedStoreManager.new
+                  - FunctionCall:
+                      name: SharedStoreManager.load
+                  - FunctionCall:
+                      name: createFromDescriptor
+                  - FunctionCall:
+                      name: CoreConfigService.loadConfigSet
+                  - FunctionCall:
+                      name: registerCore
+                  - FunctionCall:
+                      name: SolrsCores.putCore        
+          - ClassDefinition: 
+              name: ZKController        
+              subNodes:
+              - FunctionDefinition:
+                  name: getZKStateReader                             
+          - ClassDefinition: 
+              name: ZKStateReader        
+              subNodes:
+              - FunctionDefinition:
+                  name: getClusterState
+                  subNodes:
+                  - FunctionCall:
+                      name: plouf
+          - ClassDefinition: 
+              name: ClusterState       
+              subNodes:
+              - FunctionDefinition:
+                  name: getCollecionOrNull
+                  subNodes:
+                  - FunctionCall:
+                      name: plouf
+          - ClassDefinition: 
+              name: SolrConfig        
+              subNodes:
+              - FunctionDefinition:
+                  name: getRequestParsers
+                  subNodes: 
+                  - FunctionCall:
+                      name: titi
+                  - FunctionCall:
+                      name: tutu          
+      - ClassDefinition: 
+          name: any_request
+          color: [131,193,103,0.1] #GREEN
+          subNodes:
+          - ClassDefinition: 
+              name: HttpSolrCall        
+              subNodes:
+              - FunctionDefinition:
+                  name: call
+                  subNodes:
+                  - FunctionCall:
+                      name: init
+                  - FunctionCall:
+                      name: Node1.Startup.CoreContainer.getRequestHandler
+                  - FunctionCall:
+                      name: getCoreByCollection
+                  - FunctionCall:
+                      name: Node1.Startup.CoreContainer.getZKController
+                  - FunctionCall:
+                      name: Node1.Startup.ZKController.getZKStateReader
+                  - FunctionCall:
+                      name: Node1.Startup.ZKStateReader.getClusterState
+                  - FunctionCall:
+                      name: Node1.Startup.ClusterState.getCollecionOrNull
+                  - FunctionCall:
+                      name: Node1.Startup.ClusterState.getLiveNodes
+                  - FunctionCall:
+                      name: DocCollection.getLeadersReplicas
+                  - FunctionCall:
+                      name: randomlyGetSolrCore
+                  - FunctionCall:
+                      name: SolrCore.getSolrConfig
+                  - FunctionCall:
+                      name: Node1.Startup.SolrConfig.getRequestParsers
+                       
+      - ClassDefinition: 
+          name: select
+          color: [202,163,232,0.1] # PURPLE_A
+          subNodes:
+          - ClassDefinition: 
+              name: SearchHandler        
+              subNodes:
+              - FunctionDefinition:
+                  name: handleRequestBody
+                  subNodes:
+                  - FunctionCall:
+                      name: getComponents
+                  - FunctionCall:
+                      name: getAndPrepShardHAndler
+                  - FunctionCall:
+                      name: SolrComponent.prepare
+                  - FunctionCall:
+                      name: SolrComponent.process
+                     
+      - ClassDefinition: 
+          name: update
+          color: [255,255,0,0.1] #YELLOW
+          subNodes:
+          - ClassDefinition: 
+              name: ContentStreamHandlerBase       
+              subNodes:
+              - FunctionDefinition:
+                  name: handleRequestBody
+                  subNodes: 
+                  - FunctionCall:
+                      name: SolrQueryRequest.getCore
+                  - FunctionCall:
+                      name: SolrCore.getUpdateProcessorChain
+                  - FunctionCall:
+                      name: UpdateRequestProcessorChain.createProcessor
+                  - FunctionCall:
+                      name: newLoader
+                  - FunctionCall:
+                      name: jsonLoader.load
+                  - FunctionCall:
+                      name: RequestHandlerUtils.handleCommit
+          - ClassDefinition: 
+              name: jsonLoader        
+              subNodes:
+              - FunctionDefinition:
+                  name: load
+                  subNodes:
+                   - FunctionCall:
+                      name: SingleThreadedJsonLoader.load
+          - ClassDefinition: 
+              name: SingleThreadedJsonLoader        
+              subNodes:
+              - FunctionDefinition:
+                  name: load
+                  subNodes:
+                   - FunctionCall:
+                      name: processUpdate
+                   - FunctionCall:
+                      name: Processor.processAdd
+                   - FunctionCall:
+                      name: Processor.processCommit
+      - ClassDefinition: 
+          name: blob      
+          color: [35,107,142,0.1] #BLUE_E
+          subNodes:
+          - FunctionDefinition:
+              name: Function1
+              subNodes:
+              - FunctionCall:
+                 name: toto
+              - FunctionCall:
+                  name: titi 
+              - FunctionCall:
+                  name: tutu
+              - FunctionCall:
+                  name: solr.Node1.func
+              - FunctionCall:
+                  name: this.Function
+              - FunctionCall:
+                  name: toto
+          - FunctionDefinition:
+              name: Function2
+              subNodes: 
+              - FunctionCall:
+                  name: toto
+              - FunctionCall:
+                  name: titi 
+              - FunctionCall:
+                  name: tutu   
+  - ClassDefinition: 
+      name: EBS
+      color: [35,107,142,1] #BLUE_E
+      subNodes:
+      - FunctionDefinition:
+          name: Function2
+          subNodes:  
+          - FunctionCall:
+              name: toto 
+          - FunctionCall:
+              name: titi
+          - FunctionCall:
+              name: tutu
+  - ClassDefinition: 
+      name: Node2       
+      color: [221,221,221,1] #LIGHTER_GRAY
+      subNodes:
+      - ClassDefinition: 
+          name: class1              
+          color: [35,107,142,0.1] #BLUE_E
+          subNodes:
+          - FunctionDefinition:
+              name: func1
+              subNodes: 
+               - FunctionCall:
+                   name: toto
+               - FunctionCall:
+                   name: titi
+               - FunctionCall:
+                   name: tutu
+               - FunctionCall:
+                   name: solr.Node1.func
+               - FunctionCall:
+                   name: this.Function         
+               - FunctionCall:
+                   name: this.toto         
+      - ClassDefinition: 
+          name: class2              
+          color: [35,107,142,0.1] #BLUE_E
+          subNodes:
+          - FunctionDefinition:
+              name: func1
+              subNodes: 
+               - FunctionCall:
+                   name: toto
+               - FunctionCall:
+                   name: titi
+               - FunctionCall:
+                   name: tutu
+               - FunctionCall:
+                   name: solr.Node1.func  
+               - FunctionCall:
+                   name: this.Function
+               - FunctionCall:
+                   name: toto

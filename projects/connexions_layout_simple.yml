@@ -1,0 +1,330 @@
+- id: ROOT.Startup_ROOT.Startup2
+  nbSegments: 1
+  start:
+    node: Startup
+    connexionSide: RIGHT
+    nConnexion: 6
+  end:
+    node: Startup2
+    connexionSide: LEFT
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Startup.toto_ROOT.Startup.toto.aaaaaaaaaa
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: aaaaaaaaaa
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup.toto.aaaaaaaaaa_ROOT.Startup.toto.bbbbbbbbbb
+  nbSegments: 1
+  start:
+    node: aaaaaaaaaa
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: bbbbbbbbbb
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.bbbbbbbbbb_ROOT.Startup.toto.cccccccccc
+  nbSegments: 1
+  start:
+    node: bbbbbbbbbb
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: cccccccccc
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.cccccccccc_ROOT.Startup.toto.dddddddddd
+  nbSegments: 1
+  start:
+    node: cccccccccc
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: dddddddddd
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.dddddddddd_ROOT.Startup.toto.eeeeeeeeee
+  nbSegments: 1
+  start:
+    node: dddddddddd
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: eeeeeeeeee
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.eeeeeeeeee_ROOT.Startup.toto.ffffffffff
+  nbSegments: 1
+  start:
+    node: eeeeeeeeee
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ffffffffff
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.ffffffffff_ROOT.Startup.toto.gggggggggg
+  nbSegments: 1
+  start:
+    node: ffffffffff
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: gggggggggg
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.gggggggggg_ROOT.Startup.toto.ROOT.Startup3.toto.a111111111
+  nbSegments: 1
+  start:
+    node: gggggggggg
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ROOT.Startup3.toto.a111111111
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup.toto.ROOT.Startup3.toto.a111111111_ROOT.Startup3.toto.a111111111
+  nbSegments: 1
+  start:
+    node: ROOT.Startup3.toto.a111111111
+    connexionSide: RIGHT
+    nConnexion: 1
+  end:
+    node: a111111111
+    connexionSide: LEFT
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup.toto.ROOT.Startup3.toto.a111111111_ROOT.Startup.toto.iiiiiiiiii
+  nbSegments: 1
+  start:
+    node: ROOT.Startup3.toto.a111111111
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: iiiiiiiiii
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup2_ROOT.Startup3
+  nbSegments: 1
+  start:
+    node: Startup2
+    connexionSide: BOTTOM
+    nConnexion: 6
+  end:
+    node: Startup3
+    connexionSide: TOP
+    nConnexion: 6
+  constraint: NONE
+- id: ROOT.Startup2.toto_ROOT.Startup2.toto.a111111111
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a111111111
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup2.toto.a111111111_ROOT.Startup2.toto.a222222222
+  nbSegments: 1
+  start:
+    node: a111111111
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a222222222
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup2.toto.a222222222_ROOT.Startup2.toto.a333333333
+  nbSegments: 1
+  start:
+    node: a222222222
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a333333333
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup2.toto.a333333333_ROOT.Startup2.toto.a444444444
+  nbSegments: 1
+  start:
+    node: a333333333
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a444444444
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup2.toto.a444444444_ROOT.Startup2.toto.a555555555
+  nbSegments: 1
+  start:
+    node: a444444444
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a555555555
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup3.toto_ROOT.Startup3.toto.a111111111
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a111111111
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup3.toto.a111111111_ROOT.Startup3.toto.a222222222
+  nbSegments: 1
+  start:
+    node: a111111111
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a222222222
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup3.toto.a222222222_ROOT.Startup3.toto.a333333333
+  nbSegments: 1
+  start:
+    node: a222222222
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a333333333
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup3.toto.a333333333_ROOT.Startup3.toto.a444444444
+  nbSegments: 1
+  start:
+    node: a333333333
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a444444444
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup3.toto.a444444444_ROOT.Startup3.toto.a555555555
+  nbSegments: 1
+  start:
+    node: a444444444
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a555555555
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup4.toto_ROOT.Startup4.toto.a111111111
+  nbSegments: 1
+  start:
+    node: toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a111111111
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup4.toto.a111111111_ROOT.Startup4.toto.a222222222
+  nbSegments: 1
+  start:
+    node: a111111111
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a222222222
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup4.toto.a222222222_ROOT.Startup4.toto.ROOT.Startup3.toto.a333333333
+  nbSegments: 1
+  start:
+    node: a222222222
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ROOT.Startup3.toto.a333333333
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup4.toto.ROOT.Startup3.toto.a333333333_ROOT.Startup3.toto.a333333333
+  nbSegments: 1
+  start:
+    node: ROOT.Startup3.toto.a333333333
+    connexionSide: LEFT
+    nConnexion: 1
+  end:
+    node: a333333333
+    connexionSide: RIGHT
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.Startup4.toto.ROOT.Startup3.toto.a333333333_ROOT.Startup4.toto.a444444444
+  nbSegments: 1
+  start:
+    node: ROOT.Startup3.toto.a333333333
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a444444444
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.Startup4.toto.a444444444_ROOT.Startup4.toto.a555555555
+  nbSegments: 1
+  start:
+    node: a444444444
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: a555555555
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: VERTICAL
+- id: ROOT.MyScenario.Launch_ROOT.MyScenario.Launch.ROOT.Startup.toto
+  nbSegments: 1
+  start:
+    node: Launch
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: ROOT.Startup.toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE
+- id: ROOT.MyScenario.Launch.ROOT.Startup.toto_ROOT.Startup.toto
+  nbSegments: 1
+  start:
+    node: ROOT.Startup.toto
+    connexionSide: BOTTOM
+    nConnexion: 1
+  end:
+    node: toto
+    connexionSide: TOP
+    nConnexion: 1
+  constraint: NONE

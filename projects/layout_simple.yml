@@ -1,0 +1,155 @@
+ROOT:
+  center:
+  - 63.089755516455156
+  - 11.224460599625216
+  subNodes:
+  - Startup:
+      center:
+      - -38.21113869933109
+      - -1.8376033036746735
+      subNodes:
+      - toto:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - aaaaaaaaaa:
+              center:
+              - 0.0
+              - 20.25
+          - bbbbbbbbbb:
+              center:
+              - 0.0
+              - 15.25
+          - cccccccccc:
+              center:
+              - 0.0
+              - 10.25
+          - dddddddddd:
+              center:
+              - 0.0
+              - 5.25
+          - eeeeeeeeee:
+              center:
+              - 0.0
+              - 0.25
+          - ffffffffff:
+              center:
+              - 0.0
+              - -4.75
+          - gggggggggg:
+              center:
+              - 0.0
+              - -9.75
+          - ROOT.Startup3.toto.a111111111:
+              center:
+              - 0.0
+              - -16.5
+          - iiiiiiiiii:
+              center:
+              - 0.0
+              - -23.25
+  - Startup2:
+      center:
+      - -4.1818389622092695
+      - 8.142055339872561
+      subNodes:
+      - toto:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - a111111111:
+              center:
+              - 0.0
+              - 8.5
+          - a222222222:
+              center:
+              - 0.0
+              - 3.5
+          - a333333333:
+              center:
+              - 0.0
+              - -1.5
+          - a444444444:
+              center:
+              - 0.0
+              - -6.5
+          - a555555555:
+              center:
+              - 0.0
+              - -11.5
+  - Startup3:
+      center:
+      - -3.7811961963814813
+      - -38.446311416243944
+      subNodes:
+      - toto:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - a111111111:
+              center:
+              - 0.0
+              - 8.5624818765069
+          - a222222222:
+              center:
+              - 0.0
+              - 3.5624818765069
+          - a333333333:
+              center:
+              - 0.0
+              - -1.4375181234931
+          - a444444444:
+              center:
+              - 0.0
+              - -6.562481876506901
+          - a555555555:
+              center:
+              - 0.0
+              - -11.5624818765069
+  - Startup4:
+      center:
+      - 38.21113869933109
+      - -39.689006515659
+      subNodes:
+      - toto:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - a111111111:
+              center:
+              - 0.0
+              - 10.25
+          - a222222222:
+              center:
+              - 0.0
+              - 5.25
+          - ROOT.Startup3.toto.a333333333:
+              center:
+              - 0.0
+              - -1.5
+          - a444444444:
+              center:
+              - 0.0
+              - -8.25
+          - a555555555:
+              center:
+              - 0.0
+              - -13.25
+  - MyScenario:
+      center:
+      - -37.57423727404307
+      - 45.689006515659
+      subNodes:
+      - Launch:
+          center:
+          - 0.0
+          - -2.0
+          subNodes:
+          - ROOT.Startup.toto:
+              center:
+              - 0.0
+              - -1.5
